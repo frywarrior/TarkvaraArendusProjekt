@@ -1,0 +1,5 @@
+{'name': 'Bjõrn', 'sirname': 'Johanson', 'age': '17', 'gender': 'mees', 'pin': '8180', 'balance': 0}
+{'name': 'Franco', 'sirname': 'Kikkas', 'age': '16', 'gender': 'mees', 'pin': '6969', 'balance': 20000}
+{'name': 'Torren', 'sirname': 'Tamm', 'age': '16', 'gender': 'mees', 'pin': '1001', 'balance': 3000}
+{'name': 'Margus', 'sirname': 'Kinnas', 'age': '46', 'gender': 'mees', 'pin': '8899', 'balance': 100000}
+{'name': 'Aadu', 'sirname': 'Beedu', 'age': '16', 'gender': 'mees', 'pin': '1234', 'balance': 200000}
