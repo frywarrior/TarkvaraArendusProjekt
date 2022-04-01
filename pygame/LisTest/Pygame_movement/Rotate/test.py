@@ -18,6 +18,7 @@ def rotate_triangle(center, scale, mouse_pos):
 
 disp = pygame.display.set_mode((300, 300))
 
+
 run = True
 while run:
 
