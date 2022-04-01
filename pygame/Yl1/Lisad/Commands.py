@@ -1,4 +1,4 @@
-import pygame
+# Pygame draw commands
 """
 screen.fill([204, 255, 255])
 
