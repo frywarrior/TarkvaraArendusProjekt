@@ -9,15 +9,33 @@ u = 20
 screen = pygame.display.set_mode([300, 300])
 #
 pygame.display.set_caption("Lumemees")
+
+
 # Paneb display nime lumemeheks
 
 def pilv(x, y):
     pygame.draw.circle(screen, [255, 255, 255], [x, y], 15, 0)
     pygame.draw.circle(screen, [255, 255, 255], [x + 15, y], 16, 0)
     pygame.draw.circle(screen, [255, 255, 255], [x + 30, y], 15, 0)
+
+
 while True:
     screen.fill([0, 191, 255])
     # Täidab ekraani sinisega
+
+    pygame.draw.circle(screen, [255, 255, 26], [300, 0], 50, 0)
+    pygame.draw.circle(screen, [255, 255, 77], [300, 0], 40, 0)
+    # Päike
+
+    if u < 330:
+        pilv(u, 50)
+        pilv(u + 50, 15)
+        pilv(u - 50, 75)
+        u += 10
+    else:
+        u = -70
+    # Pilv
+
     pygame.draw.circle(screen, [255, 255, 255], [150, 85], 30, 0)
     # pygame.draw.circle(screen, värv, tsentri_pos, raadius, joone_paksus)
     pygame.draw.circle(screen, [0, 0, 0], [160, 80], 5, 0)
@@ -32,31 +50,12 @@ while True:
     pygame.draw.circle(screen, [255, 255, 255], [150, 235], 50, 0)
     # pygame.draw.circle(screen, värv, tsentri_pos, raadius, joone_paksus)
 
-    #
-    ### LISA
-    #
     i += 1
     pygame.draw.circle(screen, [230, 230, 230], [300, 450], 200, 0)
     pygame.draw.circle(screen, [230, 230, 230], [100, 450], 195, 0)
     pygame.draw.circle(screen, [230, 230, 230], [200, 350], 85, 0)
     pygame.draw.circle(screen, [230, 230, 230], [0, 450], 190, 0)
     # Lumi
-
-    pygame.draw.circle(screen, [255, 255, 26], [300, 0], 50, 0)
-    pygame.draw.circle(screen, [255, 255, 77], [300, 0], 40, 0)
-
-
-    # Päike
-
-
-    if u < 330:
-        pilv(u,50)
-        pilv(u + 50, 15)
-        pilv(u - 50, 75)
-        u += 10
-    else:
-        u = -70
-    # Pilv
 
     if i != 2:
         pygame.draw.line(screen, [102, 51, 0], [50, 190], [200, 190], 2)
@@ -74,7 +73,6 @@ while True:
         pygame.draw.line(screen, [153, 102, 51], [75, 190], [70, 200], 2)
         pygame.draw.line(screen, [153, 102, 51], [75, 190], [80, 200], 2)
         # vasak käsi
-
 
     else:
         i = 0
