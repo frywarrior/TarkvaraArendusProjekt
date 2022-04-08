@@ -1,4 +1,5 @@
 import pygame
+
 pygame.init()
 #ekraani seaded
 screen=pygame.display.set_mode([640,480])
@@ -23,5 +24,5 @@ while main == True:
         if event.type == pygame.QUIT:
         # Kui sündmus võrdub lahkumine
             pygame.quit()
-            sys.exit()
+            quit()
             # Lahkub programmist ja peatab kõik mis programmis toimub
