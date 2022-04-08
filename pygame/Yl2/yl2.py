@@ -14,6 +14,7 @@ while main == True:
     screen.blit(text, [200, 200])
 
     bg = pygame.image.load("yl2_pilt.jpg")
+    bg = pygame.image.load("yl2_seller.jpg/bg.jpg")
     screen.blit(bg, [0, 0])
 
     pygame.display.flip()
