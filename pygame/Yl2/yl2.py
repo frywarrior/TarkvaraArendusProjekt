@@ -18,6 +18,8 @@ while main == True:
     screen.blit(bg, [0, 0])
     bg = pygame.image.load("yl2_seller.jpg")
     screen.blit(bg, [0, 0])
+    bg = pygame.image.load("yl2_chat.jpg")
+    screen.blit(bg, [0, 0])
 
     pygame.display.flip()
     for event in pygame.event.get():
