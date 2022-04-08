@@ -25,6 +25,10 @@ while True:
 
     pygame.draw.circle(screen, [255, 255, 26], [300, 0], 50, 0)
     pygame.draw.circle(screen, [255, 255, 77], [300, 0], 40, 0)
+
+    pygame.draw.line(screen, [255, 255, 26], [260, 35], [240, 50], 2)
+    pygame.draw.line(screen, [255, 255, 26], [290, 50], [270, 50], 2)
+    pygame.draw.line(screen, [255, 255, 26], [260, 35], [240, 50], 2)
     # Päike
 
     if u < 330:
