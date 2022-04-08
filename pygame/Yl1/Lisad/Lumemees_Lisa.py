@@ -27,7 +27,7 @@ while True:
     pygame.draw.circle(screen, [255, 255, 77], [300, 0], 40, 0)
 
     pygame.draw.line(screen, [255, 255, 26], [260, 35], [240, 50], 2)
-    pygame.draw.line(screen, [255, 255, 26], [290, 50], [270, 50], 2)
+    pygame.draw.line(screen, [255, 255, 26], [290, 52], [280, 72], 2)
     pygame.draw.line(screen, [255, 255, 26], [260, 35], [240, 50], 2)
     # Päike
 
