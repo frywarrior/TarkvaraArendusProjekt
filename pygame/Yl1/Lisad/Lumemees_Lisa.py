@@ -28,7 +28,7 @@ while True:
 
     pygame.draw.line(screen, [255, 255, 26], [260, 35], [240, 50], 2)
     pygame.draw.line(screen, [255, 255, 26], [290, 52], [280, 72], 2)
-    pygame.draw.line(screen, [255, 255, 26], [260, 35], [240, 50], 2)
+    pygame.draw.line(screen, [255, 255, 26], [246, 10], [222, 18], 2)
     # Päike
 
     if u < 330:
