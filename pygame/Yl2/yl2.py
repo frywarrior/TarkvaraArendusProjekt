@@ -11,7 +11,7 @@ while main == True:
     screen.fill([255, 255, 255])
 
     font = pygame.font.Font(None, 30)
-    text = font.render("Tere, olen sinu nimi", True, [0, 0, 0])
+    text = font.render("Tere, olen Sinu nimi", True, [255, 255, 255])
     screen.blit(text, [200, 200])
 
     bg = pygame.image.load("yl2_pilt.jpg")
