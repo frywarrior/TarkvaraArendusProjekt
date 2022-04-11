@@ -5,9 +5,9 @@ pygame.init()
 screen=pygame.display.set_mode([640,480])
 pygame.display.set_caption("yl2_pilt")
 
-main = True
 
-while main == True:
+
+while True:
     screen.fill([255, 255, 255])
 
     font = pygame.font.Font(None, 30)
