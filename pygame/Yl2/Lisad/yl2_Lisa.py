@@ -12,20 +12,28 @@ while main == True:
 
     bg = pygame.image.load("yl2_pilt.jpg")
     screen.blit(bg, [0, 0])
-    bg = pygame.image.load("yl2_seller.jpg")
-    bg = pygame.transform.scale(bg, [253, 304])
-    screen.blit(bg, [104, 159])
-    bg = pygame.image.load("yl2_chat.jpg")
-    bg = pygame.transform.scale(bg, [257, 202])
-    screen.blit(bg, [246, 66])
+    mees = pygame.image.load("yl2_seller.jpg")
+    mees = pygame.transform.scale(mees, [253, 304])
+    screen.blit(mees, [104, 159])
+    chat = pygame.image.load("yl2_chat.jpg")
+    chat = pygame.transform.scale(chat, [257, 202])
+    screen.blit(chat, [246, 66])
 
     font = pygame.font.Font(None, 30)
     text = font.render("Tere, olen Aadu Kaup", True, [255, 255, 255])
     screen.blit(text, [270, 140])
 
-    bg = pygame.image.load("VIKK logo.png")
-    bg = pygame.transform.scale(bg, [277, 35])
-    screen.blit(bg, [0, 0])
+    logo = pygame.image.load("VIKK logo.png")
+    logo = pygame.transform.scale(logo, [300, 40])
+    screen.blit(logo, [0, 0])
+
+    kook = pygame.image.load("Cake.png")
+    kook = pygame.transform.scale(kook, [100, 100])
+    screen.blit(kook, [450, 190])
+
+    sword = pygame.image.load("Mook.png")
+    sword = pygame.transform.scale(sword, [100, 100])
+    screen.blit(sword, [540, 190])
 
     pygame.display.flip()
     for event in pygame.event.get():
