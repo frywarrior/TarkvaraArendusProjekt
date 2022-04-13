@@ -20,8 +20,8 @@ while True:
     bg = pygame.transform.scale(bg, [253, 304])
     screen.blit(bg, [104, 159])
     bg = pygame.image.load("yl2_chat.jpg")
-    bg = pygame.transform.scale(bg, [261, 220])
-    screen.blit(bg, [241, 50])
+    bg = pygame.transform.scale(bg, [257, 202])
+    screen.blit(bg, [246, 66])
 
     pygame.display.flip()
     for event in pygame.event.get():
