@@ -9,6 +9,7 @@ main = True
 
 while main == True:
     screen.fill([255, 255, 255])
+    #täidab valge värviga
 
     bg = pygame.image.load("yl2_pilt.jpg")
     screen.blit(bg, [0, 0])
@@ -18,10 +19,12 @@ while main == True:
     bg = pygame.image.load("yl2_chat.jpg")
     bg = pygame.transform.scale(bg, [257, 202])
     screen.blit(bg, [246, 66])
+    #taustapilt, asukoht, müüja pilt, müüja suurus ja laius, müüja asukoht, teksti lahtri pilt, teksti lahtri suurus ja laius, teksti lahti asukoht
 
     font = pygame.font.Font(None, 30)
     text = font.render("Tere, olen Aadu Kaup", True, [255, 255, 255])
     screen.blit(text, [270, 140])
+    #teksti font, tekst ja teksti värv, teksti asukoht
 
     pygame.display.flip()
     for event in pygame.event.get():
