@@ -10,6 +10,10 @@ main = True
 while main == True:
     screen.fill([255, 255, 255])
 
+    font = pygame.font.Font(None, 30)
+    text = font.render("Hello PyGame", True, [0, 0, 0])
+    screen.blit(text, [200, 200])
+
     bg = pygame.image.load("yl2_pilt.jpg")
     screen.blit(bg, [0, 0])
     bg = pygame.image.load("yl2_seller.jpg")
@@ -18,10 +22,6 @@ while main == True:
     bg = pygame.image.load("yl2_chat.jpg")
     bg = pygame.transform.scale(bg, [257, 202])
     screen.blit(bg, [246, 66])
-
-    font = pygame.font.Font(None, 30)
-    text = font.render("Tere, olen Aadu Kaup", True, [255, 255, 255])
-    screen.blit(text, [270, 140])
 
     pygame.display.flip()
     for event in pygame.event.get():
