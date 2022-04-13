@@ -23,6 +23,10 @@ while main == True:
     text = font.render("Tere, olen Aadu Kaup", True, [255, 255, 255])
     screen.blit(text, [270, 140])
 
+    bg = pygame.image.load("VIKK logo.png")
+    bg = pygame.transform.scale(bg, [277, 35])
+    screen.blit(bg, [0, 0])
+
     pygame.display.flip()
     for event in pygame.event.get():
     # Otsib kas on mingi "Event" toimunud
