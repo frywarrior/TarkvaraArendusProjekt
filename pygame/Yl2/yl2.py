@@ -11,6 +11,7 @@ while main == True:
     screen.fill([255, 255, 255])
     #täidab valge värviga
 
+
     bg = pygame.image.load("yl2_pilt.jpg")
     screen.blit(bg, [0, 0])
     bg = pygame.image.load("yl2_seller.jpg")
