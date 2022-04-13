@@ -30,7 +30,7 @@ while True:
     # Täidab ekraani sinisega
 
     a = circle()
-    pygame.transform.rotate(a,10)
+    pygame.transform.rotate(screen,10)
 
     pygame.display.update()
 
