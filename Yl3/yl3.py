@@ -13,23 +13,27 @@ pygame.display.set_caption("yl3_pilt")
 
 screen.fill([154, 255, 155])
 
-
+"""
 def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
-    x = 0
-    y = 0
-    ix = 0
-    iy = 0
+    x, y, ix, iy = 0, 0, 0, 0
     while y <= H and iy != rida:
         while x <= W and ix != veerg:
             pygame.draw.rect(screen, varv, [x, y, suurus, suurus], paksus)
             x += suurus - paksus
             ix += 1
-            pygame.display.flip()
-        x = 0
-        ix = 0
+        x, ix = 0, 0
         y += suurus - paksus
         iy += 1
-        pygame.display.flip()
+"""
+
+
+def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
+    x, y, ix, iy = 0, 0, 0, 0
+    while y <= H and iy != rida:
+        while x <= W and ix != veerg:
+            pygame.draw.rect(screen, varv, [x, y, suurus, suurus], paksus)
+            x, ix = (x + (suurus - paksus)), (ix + 1)
+        x, ix, y, iy = 0, 0, (y + (suurus - paksus)), (iy + 1)
 
 
 while True:
