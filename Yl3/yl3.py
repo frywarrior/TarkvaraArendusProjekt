@@ -9,13 +9,10 @@ H = 480
 screen = pygame.display.set_mode([W, H])
 pygame.display.set_caption("yl3_pilt")
 
-# a = int(input("Kui suured ruudud?: "))
-
 screen.fill([154, 255, 155])
 
-
-def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
-    x, y, ix, iy = 0, 0, 0, 0  # seab vajalikud muutujad nulli
+def ruudud(varv, suurus, paksus=1, rida=0.1, veerg=0.1):
+    x = y = ix = iy = 0  # seab vajalikud muutujad nulli
     while y <= H and iy != rida:
         # kui muutuja y on väiksem või võrdne ekraani kõrgusega ja iy ei ole võrdne ridade arvuga
         while x <= W and ix != veerg:
@@ -24,10 +21,11 @@ def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
             x += suurus - paksus  # liidab x väärtusele ruudu suuruse ja ruudu paksuse vahe
             ix += 1  # Liidab Indikaator x väärtusele arvu 1
             pygame.display.flip()  # uuendab ekraani
-        x, ix = 0, 0  # seab vajalikud muutujad nulli
+        x = ix = 0  # seab vajalikud muutujad nulli
         y += suurus - paksus  # liidab y väärtusele ruudu suuruse ja ruudu paksuse vahe
         iy += 1  # Liidab Indikaator y väärtusele arvu 1
         pygame.display.flip()  # uuendab ekraani
+
 
 
 #
@@ -35,8 +33,8 @@ def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
 #
 
 """
-def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
-    x, y, ix, iy = 0, 0, 0, 0
+def ruudud(varv, suurus, paksus=1, rida=0.1, veerg=0.1):
+    x = y = ix = iy = 0
     while y <= H and iy != rida:
         while x <= W and ix != veerg:
             pygame.draw.rect(screen, varv, [x, y, suurus, suurus], paksus)
@@ -46,7 +44,7 @@ def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
 
 while True:
 
-    ruudud([255, 0, 0], 40, 3, 3, 1)
+    ruudud([255, 0, 0], 20, 2)
 
     pygame.display.flip()
     for event in pygame.event.get():
