@@ -9,12 +9,12 @@ H = 480
 screen = pygame.display.set_mode([W, H])
 pygame.display.set_caption("yl3_pilt")
 
-
 # a = int(input("Kui suured ruudud?: "))
 
 screen.fill([154, 255, 155])
 
-def Ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
+
+def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
     x = 0
     y = 0
     ix = 0
@@ -30,9 +30,11 @@ def Ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
         y += suurus - paksus
         iy += 1
         pygame.display.flip()
+
+
 while True:
 
-    Ruudud([255, 0, 0], 40, 3, 3, 1)
+    ruudud([255, 0, 0], 40, 3, 3, 1)
 
     pygame.display.flip()
     for event in pygame.event.get():
