@@ -11,6 +11,7 @@ pygame.display.set_caption("yl3_pilt")
 
 screen.fill([154, 255, 155])
 
+
 def ruudud(varv, suurus, paksus=1, rida=0.1, veerg=0.1):
     x = y = ix = iy = 0  # seab vajalikud muutujad nulli
     while y <= H and iy != rida:
@@ -25,7 +26,6 @@ def ruudud(varv, suurus, paksus=1, rida=0.1, veerg=0.1):
         y += suurus - paksus  # liidab y väärtusele ruudu suuruse ja ruudu paksuse vahe
         iy += 1  # Liidab Indikaator y väärtusele arvu 1
         pygame.display.flip()  # uuendab ekraani
-
 
 
 #
