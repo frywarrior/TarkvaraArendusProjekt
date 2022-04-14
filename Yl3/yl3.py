@@ -1,7 +1,7 @@
 import pygame
 
 # kle robert raisk mul on nii pohhui sellest ja ma hakkasin jooma,
-# niiet mine putsi sina jood nii et mina võin ka juua by vova, Franco toakaaslane
+# niiet mine putsi, kui sina jood siis mina võin ka juua by vova, Franco toakaaslane
 
 # ekraani seaded
 W = 640
@@ -13,22 +13,28 @@ pygame.display.set_caption("yl3_pilt")
 
 screen.fill([154, 255, 155])
 
-"""
+
 def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
-    x, y, ix, iy = 0, 0, 0, 0
+    x, y, ix, iy = 0, 0, 0, 0  # seab vajalikud muutujad nulli
     while y <= H and iy != rida:
+        # kui muutuja y on väiksem või võrdne ekraani kõrgusega ja iy ei ole võrdne ridade arvuga
         while x <= W and ix != veerg:
-            pygame.draw.rect(screen, varv, [x, y, suurus, suurus], paksus)
-            x += suurus - paksus
-            ix += 1
-            pygame.display.flip()
-        x, ix = 0, 0
-        y += suurus - paksus
-        iy += 1
-        pygame.display.flip()
+            # kui muutuja x on väiksem või võrdne ekraani laiusega ja ix ei ole võrdne veergude arvuga
+            pygame.draw.rect(screen, varv, [x, y, suurus, suurus], paksus)  # joonistab antud parameetritega ruudu
+            x += suurus - paksus  # liidab x väärtusele ruudu suuruse ja ruudu paksuse vahe
+            ix += 1  # Liidab Indikaator x väärtusele arvu 1
+            pygame.display.flip()  # uuendab ekraani
+        x, ix = 0, 0  # seab vajalikud muutujad nulli
+        y += suurus - paksus  # liidab y väärtusele ruudu suuruse ja ruudu paksuse vahe
+        iy += 1  # Liidab Indikaator y väärtusele arvu 1
+        pygame.display.flip()  # uuendab ekraani
+
+
+#
+# Kompaktsem versioon, kuid palju raskem komenteerida
+#
+
 """
-
-
 def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
     x, y, ix, iy = 0, 0, 0, 0
     while y <= H and iy != rida:
@@ -36,7 +42,7 @@ def ruudud(varv, suurus, rida=0.1, veerg=0.1, paksus=1):
             pygame.draw.rect(screen, varv, [x, y, suurus, suurus], paksus)
             x, ix = (x + (suurus - paksus)), (ix + 1)
         x, ix, y, iy = 0, 0, (y + (suurus - paksus)), (iy + 1)
-
+"""
 
 while True:
 
