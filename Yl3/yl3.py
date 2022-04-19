@@ -7,7 +7,7 @@ import pygame
 W = 640
 H = 480
 screen = pygame.display.set_mode([W, H])
-pygame.display.set_caption("yl3_pilt")
+pygame.display.set_caption("yl3")
 
 screen.fill([154, 255, 155])
 
@@ -29,7 +29,7 @@ def ruudud(varv, suurus, paksus=1, rida=0.1, veerg=0.1):
 
 
 #
-# Kompaktsem versioon, kuid palju raskem komenteerida
+# Kompaktsem versioon, kuid raske komenteerida, kuna osal real teeb mitut asja korraga
 #
 
 """
