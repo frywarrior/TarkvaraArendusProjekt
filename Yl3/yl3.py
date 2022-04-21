@@ -1,8 +1,5 @@
 import pygame
 
-# kle robert raisk mul on nii pohhui sellest ja ma hakkasin jooma,
-# niiet mine putsi, kui sina jood siis mina võin ka juua by vova, Franco toakaaslane
-
 # ekraani seaded
 W = 640
 H = 480
